@@ -1,0 +1,6 @@
+com/univibe/survey/repo/SurveyRepository.class
+com/univibe/survey/model/SurveyQuestion.class
+com/univibe/survey/web/SurveyController.class
+com/univibe/survey/repo/SurveyAnswerRepository.class
+com/univibe/survey/model/Survey.class
+com/univibe/survey/model/SurveyAnswer.class

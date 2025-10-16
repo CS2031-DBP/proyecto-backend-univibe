@@ -1,0 +1,5 @@
+com/univibe/registration/web/RegistrationController.class
+com/univibe/registration/model/Registration.class
+com/univibe/registration/model/RegistrationStatus.class
+com/univibe/registration/service/QrService.class
+com/univibe/registration/repo/RegistrationRepository.class

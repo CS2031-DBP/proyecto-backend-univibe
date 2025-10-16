@@ -1,0 +1,5 @@
+com/univibe/gamification/service/GamificationService.class
+com/univibe/gamification/repo/AchievementRepository.class
+com/univibe/gamification/model/UserAchievement.class
+com/univibe/gamification/model/Achievement.class
+com/univibe/gamification/repo/UserAchievementRepository.class

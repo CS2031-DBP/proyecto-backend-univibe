@@ -1,0 +1,3 @@
+com/univibe/notification/web/NotificationController.class
+com/univibe/notification/repo/NotificationRepository.class
+com/univibe/notification/model/Notification.class

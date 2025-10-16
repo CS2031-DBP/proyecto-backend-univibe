@@ -1,0 +1,4 @@
+com/univibe/auth/AuthController.class
+com/univibe/auth/dto/AuthResponse.class
+com/univibe/auth/dto/LoginRequest.class
+com/univibe/auth/dto/RegisterRequest.class

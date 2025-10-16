@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: univibe-backend
+  datasource:
+    url: jdbc:postgresql://localhost:5432/univibe
+    username: univibe
+    password: univibe
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: false
+  flyway:
+    enabled: false
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: when_authorized
+
+logging:
+  level:
+    root: INFO

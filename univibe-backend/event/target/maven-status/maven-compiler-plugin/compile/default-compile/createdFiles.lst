@@ -1,0 +1,4 @@
+com/univibe/event/web/EventController.class
+com/univibe/event/model/EventStatus.class
+com/univibe/event/repo/EventRepository.class
+com/univibe/event/model/Event.class

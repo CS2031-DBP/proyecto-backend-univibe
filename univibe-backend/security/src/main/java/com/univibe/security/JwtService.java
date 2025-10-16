@@ -17,7 +17,7 @@ public class JwtService {
     private final long expirationSeconds;
 
     public JwtService(
-            @Value("${security.jwt.secret:HEWUV8ZMmLvjCaicYnSvJQ7MrV944YNFT9DqyIrDMFI=}") String base64Secret,
+            @Value("${security.jwt.secret:zH7rN8yQ2vX9mL4tP5aE3kJ1bF6cW0gR7uS2iV8nO3dT5pZ6xA1qB9sD7jL2fY4h=}") String base64Secret,
             @Value("${security.jwt.ttl-seconds:86400}") long expirationSeconds
     ) {
         this.signingKey = Keys.hmacShaKeyFor(Decoders.BASE64.decode(base64Secret));

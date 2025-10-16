@@ -1,6 +1,9 @@
 
 arrancar el proyecto con docker
 
+cd univibe-backend
+
+mvn clean package 
 docker compose up -d --build app
 
 

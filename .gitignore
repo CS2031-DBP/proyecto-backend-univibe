@@ -1,0 +1,46 @@
+# =========================================
+# 🌱 Univibe Backend - Spring Boot / Maven
+# =========================================
+
+# 🔹 Maven build
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# 🔹 IDEs y editores
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+*.swp
+
+# 🔹 Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# 🔹 Archivos de logs
+*.log
+logs/
+*.out
+
+# 🔹 Archivos de configuración local
+.env
+*.properties.local
+*.yml.local
+
+# 🔹 Archivos de dependencias / builds
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+
+# 🔹 Archivos temporales y de compilación
+*.class
+bin/
+build/
+out/
+
+# 🔹 Node / Frontend (si en algún momento agregas frontend)
+node_modules/
+dist/

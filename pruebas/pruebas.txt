@@ -1,3 +1,14 @@
+Proyecto en Local 
+
+
+
+./mvnw -f univibe-backend/pom.xml clean install -DskipTests
+./mvnw -f univibe-backend/pom.xml -DskipTests -pl app spring-boot:run
+
+habilitar el servicio de postgresql
+
+
+
 
 arrancar el proyecto con docker
 

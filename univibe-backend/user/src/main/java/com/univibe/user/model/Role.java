@@ -2,5 +2,6 @@ package com.univibe.user.model;
 
 public enum Role {
     USER,
-    ADMIN
+    ADMIN,
+    SERVER
 }

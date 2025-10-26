@@ -1,3 +1,5 @@
-/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/notification/src/main/java/com/univibe/notification/model/Notification.java
-/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/notification/src/main/java/com/univibe/notification/repo/NotificationRepository.java
-/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/notification/src/main/java/com/univibe/notification/web/NotificationController.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/notification/src/main/java/com/univibe/notification/listener/RegistrationEmailListener.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/notification/src/main/java/com/univibe/notification/model/Notification.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/notification/src/main/java/com/univibe/notification/repo/NotificationRepository.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/notification/src/main/java/com/univibe/notification/service/MailService.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/notification/src/main/java/com/univibe/notification/web/NotificationController.java

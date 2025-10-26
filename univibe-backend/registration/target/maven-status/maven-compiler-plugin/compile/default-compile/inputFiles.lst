@@ -1,5 +1,8 @@
-/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/registration/src/main/java/com/univibe/registration/model/Registration.java
-/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/registration/src/main/java/com/univibe/registration/model/RegistrationStatus.java
-/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/registration/src/main/java/com/univibe/registration/repo/RegistrationRepository.java
-/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/registration/src/main/java/com/univibe/registration/service/QrService.java
-/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/registration/src/main/java/com/univibe/registration/web/RegistrationController.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/registration/src/main/java/com/univibe/registration/dto/CheckInRequest.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/registration/src/main/java/com/univibe/registration/dto/CheckInResponse.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/registration/src/main/java/com/univibe/registration/dto/RegistrationResponse.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/registration/src/main/java/com/univibe/registration/model/Registration.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/registration/src/main/java/com/univibe/registration/model/RegistrationStatus.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/registration/src/main/java/com/univibe/registration/repo/RegistrationRepository.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/registration/src/main/java/com/univibe/registration/service/QrService.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/registration/src/main/java/com/univibe/registration/web/RegistrationController.java

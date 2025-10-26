@@ -4,6 +4,8 @@ import com.univibe.auth.dto.AuthResponse;
 import com.univibe.auth.dto.LoginRequest;
 import com.univibe.auth.dto.RegisterRequest;
 import com.univibe.security.JwtService;
+import com.univibe.common.exception.DuplicateResourceException;
+import com.univibe.common.exception.UnauthorizedException;
 import com.univibe.user.model.Role;
 import com.univibe.user.model.User;
 import com.univibe.user.repo.UserRepository;
@@ -31,7 +33,7 @@ public class AuthController {
     @PostMapping("/register")
     public AuthResponse register(@RequestBody @Valid RegisterRequest request) {
         if (userRepository.existsByEmail(request.email())) {
-            throw new IllegalArgumentException("Email already in use");
+            throw new DuplicateResourceException("Email already in use");
         }
         User user = new User();
         user.setName(request.name());
@@ -46,9 +48,9 @@ public class AuthController {
     @PostMapping("/login")
     public AuthResponse login(@RequestBody @Valid LoginRequest request) {
         User user = userRepository.findByEmail(request.email())
-                .orElseThrow(() -> new IllegalArgumentException("Invalid credentials"));
+                .orElseThrow(() -> new UnauthorizedException("Invalid credentials"));
         if (!passwordEncoder.matches(request.password(), user.getPasswordHash())) {
-            throw new IllegalArgumentException("Invalid credentials");
+            throw new UnauthorizedException("Invalid credentials");
         }
         String token = jwtService.generateToken(user.getEmail(), Map.of("role", user.getRole().name()));
         return new AuthResponse(token);

@@ -1,6 +1,6 @@
-/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/survey/src/main/java/com/univibe/survey/model/Survey.java
-/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/survey/src/main/java/com/univibe/survey/model/SurveyAnswer.java
-/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/survey/src/main/java/com/univibe/survey/model/SurveyQuestion.java
-/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/survey/src/main/java/com/univibe/survey/repo/SurveyAnswerRepository.java
-/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/survey/src/main/java/com/univibe/survey/repo/SurveyRepository.java
-/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/survey/src/main/java/com/univibe/survey/web/SurveyController.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/survey/src/main/java/com/univibe/survey/model/Survey.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/survey/src/main/java/com/univibe/survey/model/SurveyAnswer.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/survey/src/main/java/com/univibe/survey/model/SurveyQuestion.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/survey/src/main/java/com/univibe/survey/repo/SurveyAnswerRepository.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/survey/src/main/java/com/univibe/survey/repo/SurveyRepository.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/survey/src/main/java/com/univibe/survey/web/SurveyController.java

@@ -1,4 +1,5 @@
-/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/event/src/main/java/com/univibe/event/model/Event.java
-/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/event/src/main/java/com/univibe/event/model/EventStatus.java
-/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/event/src/main/java/com/univibe/event/repo/EventRepository.java
-/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/event/src/main/java/com/univibe/event/web/EventController.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/event/src/main/java/com/univibe/event/dto/EventCreateRequest.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/event/src/main/java/com/univibe/event/model/Event.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/event/src/main/java/com/univibe/event/model/EventStatus.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/event/src/main/java/com/univibe/event/repo/EventRepository.java
+/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/event/src/main/java/com/univibe/event/web/EventController.java

@@ -6,9 +6,13 @@ import com.univibe.registration.model.Registration;
 import com.univibe.registration.model.RegistrationStatus;
 import com.univibe.registration.repo.RegistrationRepository;
 import com.univibe.registration.service.QrService;
+import com.univibe.registration.dto.RegistrationResponse;
+import com.univibe.registration.dto.CheckInRequest;
+import com.univibe.registration.dto.CheckInResponse;
 import com.univibe.user.model.User;
 import com.univibe.user.repo.UserRepository;
 import jakarta.validation.constraints.NotNull;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.http.MediaType;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
@@ -24,15 +28,17 @@ public class RegistrationController {
     private final UserRepository userRepository;
     private final EventRepository eventRepository;
     private final QrService qrService = new QrService();
+    private final ApplicationEventPublisher eventPublisher;
 
-    public RegistrationController(RegistrationRepository registrationRepository, UserRepository userRepository, EventRepository eventRepository) {
+    public RegistrationController(RegistrationRepository registrationRepository, UserRepository userRepository, EventRepository eventRepository, ApplicationEventPublisher eventPublisher) {
         this.registrationRepository = registrationRepository;
         this.userRepository = userRepository;
         this.eventRepository = eventRepository;
+        this.eventPublisher = eventPublisher;
     }
 
     @PostMapping(value = "/{eventId}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public Map<String, Object> register(Authentication auth, @PathVariable Long eventId) {
+    public RegistrationResponse register(Authentication auth, @PathVariable Long eventId) {
         String email = (String) auth.getPrincipal();
         User user = userRepository.findByEmail(email).orElseThrow();
         Event event = eventRepository.findById(eventId).orElseThrow();
@@ -47,13 +53,14 @@ public class RegistrationController {
         r.setEvent(event);
         r.setQrCode(payload);
         registrationRepository.save(r);
+        eventPublisher.publishEvent(new com.univibe.common.event.RegistrationCreatedEvent(user.getEmail(), event.getTitle(), event.getStartTime()));
 
-        return Map.of("registrationId", r.getId(), "qrBase64", qrBase64);
+        return new RegistrationResponse(r.getId(), qrBase64);
     }
 
     @PostMapping("/check-in")
-    public Map<String, Object> checkIn(@RequestBody Map<String, @NotNull String> body) {
-        String payload = body.get("payload");
+    public CheckInResponse checkIn(@RequestBody CheckInRequest body) {
+        String payload = body.getPayload();
         String decoded = new String(java.util.Base64.getUrlDecoder().decode(payload));
         String[] parts = decoded.split(":");
         Long userId = Long.parseLong(parts[0]);
@@ -63,6 +70,6 @@ public class RegistrationController {
         r.setStatus(RegistrationStatus.CHECKED_IN);
         r.setCheckedInAt(Instant.now());
         registrationRepository.save(r);
-        return Map.of("status", r.getStatus(), "checkedInAt", r.getCheckedInAt());
+        return new CheckInResponse(r.getStatus(), r.getCheckedInAt());
     }
 }

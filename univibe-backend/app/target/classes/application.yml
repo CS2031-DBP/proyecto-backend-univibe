@@ -2,9 +2,9 @@ spring:
   application:
     name: univibe-backend
   datasource:
-    url: jdbc:postgresql://localhost:5432/univibe
-    username: univibe
-    password: univibe
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/univibe}
+    username: ${SPRING_DATASOURCE_USERNAME:univibe}
+    password: ${SPRING_DATASOURCE_PASSWORD:univibe}
   jpa:
     hibernate:
       ddl-auto: update
@@ -15,8 +15,20 @@ spring:
   flyway:
     enabled: false
 
+  mail:
+    host: ${MAIL_HOST:}
+    port: ${MAIL_PORT:0}
+    username: ${MAIL_USERNAME:}
+    password: ${MAIL_PASSWORD:}
+    properties:
+      mail:
+        smtp:
+          auth: ${MAIL_SMTP_AUTH:true}
+          starttls:
+            enable: ${MAIL_SMTP_STARTTLS_ENABLE:true}
+
 server:
-  port: 8080
+  port: ${SERVER_PORT:8080}
 
 management:
   endpoints:

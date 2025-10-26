@@ -35,7 +35,7 @@ public class NotificationController {
     }
 
     @PostMapping("/{userId}")
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN','SERVER')")
     public Notification send(@PathVariable Long userId, @RequestParam String title, @RequestParam String message) {
         User recipient = userRepository.findById(userId).orElseThrow();
         Notification n = new Notification();

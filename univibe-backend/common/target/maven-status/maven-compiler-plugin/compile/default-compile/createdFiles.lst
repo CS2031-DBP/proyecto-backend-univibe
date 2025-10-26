@@ -1,2 +1,11 @@
-com/univibe/common/dto/PageResponse.class
+com/univibe/common/exception/UnauthorizedException.class
 com/univibe/common/exception/ApiException.class
+com/univibe/common/dto/ErrorResponse.class
+com/univibe/common/exception/ConflictException.class
+com/univibe/common/exception/DuplicateResourceException.class
+com/univibe/common/dto/PageResponse.class
+com/univibe/common/event/RegistrationCreatedEvent.class
+com/univibe/common/exception/InvalidOperationException.class
+com/univibe/common/exception/ForbiddenException.class
+com/univibe/common/exception/NotFoundException.class
+com/univibe/common/exception/BadRequestException.class

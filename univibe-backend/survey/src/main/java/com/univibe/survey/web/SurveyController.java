@@ -32,6 +32,7 @@ public class SurveyController {
 
 @PostMapping
 @Transactional
+@org.springframework.security.access.prepost.PreAuthorize("hasAnyRole('ADMIN','SERVER')")
 public Map<String, Object> create(@RequestParam Long eventId,
                                   @RequestParam String title,
                                   @RequestParam List<String> questions) {

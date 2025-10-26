@@ -9,15 +9,17 @@ services:
       - "5432:5432"
     volumes:
       - db-data:/var/lib/postgresql/data
+
   app:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     depends_on:
       - db
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/univibe
-      SPRING_DATASOURCE_USERNAME: univibe
-      SPRING_DATASOURCE_PASSWORD: univibe
+    env_file:
+      - .env
     ports:
       - "8080:8080"
+
 volumes:
   db-data:

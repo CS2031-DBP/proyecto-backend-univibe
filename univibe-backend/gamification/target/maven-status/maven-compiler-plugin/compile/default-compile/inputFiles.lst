@@ -1,5 +1,5 @@
-/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/gamification/src/main/java/com/univibe/gamification/model/Achievement.java
-/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/gamification/src/main/java/com/univibe/gamification/model/UserAchievement.java
-/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/gamification/src/main/java/com/univibe/gamification/repo/AchievementRepository.java
-/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/gamification/src/main/java/com/univibe/gamification/repo/UserAchievementRepository.java
-/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/gamification/src/main/java/com/univibe/gamification/service/GamificationService.java
+/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/gamification/src/main/java/com/univibe/gamification/model/Achievement.java
+/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/gamification/src/main/java/com/univibe/gamification/model/UserAchievement.java
+/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/gamification/src/main/java/com/univibe/gamification/repo/AchievementRepository.java
+/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/gamification/src/main/java/com/univibe/gamification/repo/UserAchievementRepository.java
+/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/gamification/src/main/java/com/univibe/gamification/service/GamificationService.java

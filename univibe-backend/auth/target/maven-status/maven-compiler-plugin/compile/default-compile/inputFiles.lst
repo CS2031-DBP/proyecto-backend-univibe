@@ -1,4 +1,4 @@
-/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/auth/src/main/java/com/univibe/auth/AuthController.java
-/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/auth/src/main/java/com/univibe/auth/dto/AuthResponse.java
-/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/auth/src/main/java/com/univibe/auth/dto/LoginRequest.java
-/home/nvm/Documents/UTEC/DBP/Proyect/Finalback/univibe-backend/auth/src/main/java/com/univibe/auth/dto/RegisterRequest.java
+/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/auth/src/main/java/com/univibe/auth/AuthController.java
+/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/auth/src/main/java/com/univibe/auth/dto/AuthResponse.java
+/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/auth/src/main/java/com/univibe/auth/dto/LoginRequest.java
+/home/nvm/Documents/UTEC/DBP/Proyect/proyecto-backend-univibe/univibe-backend/auth/src/main/java/com/univibe/auth/dto/RegisterRequest.java

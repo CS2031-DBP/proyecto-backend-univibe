@@ -2,8 +2,6 @@
 
 ## CS 2031 Desarrollo Basado en Plataforma
 
-- Integrantes: [Complete aquí los nombres completos]
-
 ## Índice
 - Portada
 - Introducción
@@ -24,8 +22,6 @@
 **Título**: UniVibe Backend – Plataforma de Gestión de Eventos Universitarios
 
 **Curso**: CS 2031 Desarrollo Basado en Plataforma
-
-**Integrantes**: [Nombres completos]
 
 ## Introducción
 Contexto y Objetivo. UniVibe surge para centralizar la oferta de eventos universitarios, simplificando el descubrimiento, registro y participación. El objetivo es brindar una API segura y modular para: registro/login, descubrimiento de eventos, inscripción con QR, gamificación, notificaciones en tiempo real, grupos y chat por evento, encuestas y sincronización con Google Calendar.
@@ -92,8 +88,8 @@ Se validan operaciones básicas de repositorio y se establece la infraestructura
 - Spring Security con `JwtAuthenticationFilter`.
 - Rutas públicas: `/api/auth/**`, `/ws/**`, `/actuator/health`.
 - Roles: `ADMIN`, `SERVER`, `USER`. Crear eventos y cambiar estado: `ADMIN` o `SERVER`.
- - CORS configurable por `CORS_ALLOWED_ORIGINS`.
- - JWT secrets por variables de entorno.
+- CORS configurable por `CORS_ALLOWED_ORIGINS`.
+- JWT secrets por variables de entorno.
 
 ## Eventos y Asincronía
 - WebSocket para notificaciones y chat por evento: `/topic/events.{eventId}`.
@@ -103,6 +99,7 @@ Se validan operaciones básicas de repositorio y se establece la infraestructura
 ## API y Diseño REST
 - Convenciones RESTful, versionado implícito, uso de códigos HTTP.
 - Ver colección Postman: `postman_collection.json`.
+- Se implementó una carpeta de pruebas para poder realizarlas por terminal. 
 
 ## GitHub & Management
 - Uso de ramas para features y PRs; CI con GitHub Actions (`.github/workflows/ci.yml`).
@@ -136,17 +133,17 @@ docker compose up
 ### Variables de entorno
 Configurar en `.env`:
 ```
-SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/univibe
+SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/univibe
 SPRING_DATASOURCE_USERNAME=univibe
 SPRING_DATASOURCE_PASSWORD=univibe
 SERVER_PORT=8080
-SECURITY_JWT_SECRET=BASE64_SECRET
+SECURITY_JWT_SECRET=zH7rN8yQ2vX9mL4tP5aE3kJ1bF6cW0gR7uS2iV8nO3dT5pZ6xA1qB9sD7jL2fY4h=
 SECURITY_JWT_TTL_SECONDS=86400
 CORS_ALLOWED_ORIGINS=*
-MAIL_HOST=smtp.example.com
+MAIL_HOST=smtp.gmail.com
 MAIL_PORT=587
-MAIL_USERNAME=your_user
-MAIL_PASSWORD=your_pass
+MAIL_USERNAME=univibe@gmail.com
+MAIL_PASSWORD=Univibe@123
 MAIL_SMTP_AUTH=true
 MAIL_SMTP_STARTTLS_ENABLE=true
 ```
@@ -154,5 +151,3 @@ MAIL_SMTP_STARTTLS_ENABLE=true
 ## Conclusiones
 Se implementó una arquitectura modular con seguridad robusta, eventos y chat controlados por estado, y documentación completa.
 
-## Licencia
-MIT

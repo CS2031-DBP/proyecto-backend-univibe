@@ -1,5 +1,0 @@
-com/univibe/notification/web/NotificationController.class
-com/univibe/notification/repo/NotificationRepository.class
-com/univibe/notification/listener/RegistrationEmailListener.class
-com/univibe/notification/service/MailService.class
-com/univibe/notification/model/Notification.class

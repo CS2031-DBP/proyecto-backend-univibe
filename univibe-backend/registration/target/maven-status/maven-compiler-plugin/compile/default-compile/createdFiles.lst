@@ -1,8 +1,0 @@
-com/univibe/registration/service/QrService.class
-com/univibe/registration/repo/RegistrationRepository.class
-com/univibe/registration/web/RegistrationController.class
-com/univibe/registration/dto/CheckInRequest.class
-com/univibe/registration/model/Registration.class
-com/univibe/registration/model/RegistrationStatus.class
-com/univibe/registration/dto/CheckInResponse.class
-com/univibe/registration/dto/RegistrationResponse.class

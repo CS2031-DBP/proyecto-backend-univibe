@@ -1,4 +1,0 @@
-com/univibe/user/model/User.class
-com/univibe/user/model/Role.class
-com/univibe/user/web/UserController.class
-com/univibe/user/repo/UserRepository.class

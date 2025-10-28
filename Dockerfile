@@ -1,24 +1,31 @@
-# ===== Stage 1: Build =====
+# Etapa 1: Build del proyecto
 FROM eclipse-temurin:21-jdk AS build
+
 WORKDIR /app
 
-# Copiar el wrapper y pom principal
-COPY .mvn/ .mvn/
+# Copiar configuraciones Maven y POM
 COPY mvnw pom.xml ./
+COPY .mvn/ .mvn/
 
-# Copiar el backend completo
-COPY univibe-backend ./univibe-backend
+# Descargar dependencias para acelerar builds futuros
+RUN ./mvnw dependency:go-offline -B
 
-# Compilar usando el POM del backend
-RUN ./mvnw -q -f univibe-backend/pom.xml -DskipTests clean package
+# Copiar el resto del código fuente
+COPY src ./src
 
-# ===== Stage 2: Runtime =====
+# Compilar el proyecto
+RUN ./mvnw clean package -DskipTests
+
+# Etapa 2: Imagen final para ejecutar
 FROM eclipse-temurin:21-jre
+
 WORKDIR /app
 
-# Copiar solo el JAR final del módulo app
-COPY --from=build /app/univibe-backend/app/target/univibe-app-*.jar app.jar
+# Copiar el JAR generado desde la etapa anterior
+COPY --from=build /app/target/*.jar app.jar
 
+# Exponer el puerto del backend
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","/app/app.jar"]
 
+# Comando de ejecución
+ENTRYPOINT ["java", "-jar", "app.jar"]

@@ -88,6 +88,7 @@ Se validan operaciones básicas de repositorio y se establece la infraestructura
 - Spring Security con `JwtAuthenticationFilter`.
 - Rutas públicas: `/api/auth/**`, `/ws/**`, `/actuator/health`.
 - Roles: `ADMIN`, `SERVER`, `USER`. Crear eventos y cambiar estado: `ADMIN` o `SERVER`.
+  - Para poder tener el rol de `SERVER` lo tiene que ascender un admin, para ascender un admin desde la terminal se puede usar lo siguiente ``` psql -h localhost -U univibe -d univibe -c "UPDATE users SET role='ADMIN' WHERE email='$EMAIL';" ```
 - CORS configurable por `CORS_ALLOWED_ORIGINS`.
 - JWT secrets por variables de entorno.
 

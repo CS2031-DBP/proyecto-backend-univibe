@@ -147,13 +147,13 @@ MAIL_PASSWORD=<your-password>
 MAIL_SMTP_AUTH=true
 MAIL_SMTP_STARTTLS_ENABLE=true
 ```
-### 🚀 Deployment en AWS
+### Deployment en AWS
 
 El proyecto fue desplegado exitosamente en una instancia **AWS EC2 (Ubuntu 24.04)** utilizando **Docker** y **Docker Compose**.  
 Los contenedores se ejecutan en segundo plano (`docker compose up -d`), asegurando la disponibilidad continua del backend.  
 Se configuró el grupo de seguridad de AWS para permitir el acceso público al puerto **8080**, donde el servicio está escuchando.
 
-URL de acceso: [http://3.140.200.20:8080/](http://3.140.200.20:8080/)
+URL de acceso: [http://3.151.11.170:8080/](http://3.151.11.170:8080/)
 
 
 ## Conclusiones
